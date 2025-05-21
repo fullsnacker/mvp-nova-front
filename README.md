@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# LinkedIn Job Scraper
 
-## Project info
+A web application that scrapes LinkedIn job listings, displays them in a frontend interface, and allows you to track your application status. All data is stored in Firebase.
 
-**URL**: https://lovable.dev/projects/32e5e195-0d40-406b-ae61-8213fb2db260
+## Features
 
-## How can I edit this code?
+- **LinkedIn Job Scraping**: Fetches job listings from LinkedIn based on your search criteria
+- **Job Status Tracking**: Track each job's status with three possible states:
+  - ✅ To Review (default)
+  - ✅ Accepted
+  - ✅ Rejected
+- **Firebase Integration**: All job data is persisted in Firebase
+- **User-Friendly Interface**: Clean UI to view and manage your job applications
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- Frontend: React.js (or Vue.js/Angular - specify which)
+- Backend: Node.js/Express (if applicable)
+- Database: Firebase Firestore
+- Web Scraping: Puppeteer/Cheerio (or whatever you're using)
+- Other Libraries: (list any important ones)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/32e5e195-0d40-406b-ae61-8213fb2db260) and start prompting.
+## Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/fullsnacker/mvp-nova-front.git
+   cd mvp-nova-front
+   ```
 
-**Use your preferred IDE**
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Set up Firebase:
+   - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+   - Get your Firebase configuration object
+   - Create a `.env` file in the root directory and add your Firebase config
+     
+4. Run the application:
+   ```bash
+   npm start
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Usage
 
-Follow these steps:
+1. Run the scraper.
+2. View jobs: The jobs will appear in the main interface
+3. Update status: Click on a job to change its status between "To Review", "Accepted", or "Rejected"
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Contributing
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Contributions are welcome! Please open an issue or submit a pull request.
 
-# Step 3: Install the necessary dependencies.
-npm i
+## License
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/32e5e195-0d40-406b-ae61-8213fb2db260) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT
